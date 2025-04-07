@@ -88,7 +88,7 @@ console.log("email:", email);
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        items: selectedServices,
+        services: selectedServices, // ✅ now matches the backend
         email: email
       })
     })

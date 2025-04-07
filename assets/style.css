@@ -1,0 +1,52 @@
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 40px 20px;
+  color: #111;
+}
+.container {
+  background: #f4f4f4;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+}
+.logo {
+  width: 160px;
+  margin-bottom: 20px;
+}
+h1, h2 {
+  font-weight: 600;
+  color: #000;
+  margin-top: 2rem;
+}
+.note {
+  margin-top: -0.5rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+.checkbox-group label {
+  display: block;
+  margin: 10px 0;
+}
+.total {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+a {
+  color: #0070f3;
+}

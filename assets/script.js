@@ -81,6 +81,9 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem("booking_services", JSON.stringify(selectedServices));
     localStorage.setItem("booking_email", email);
 
+    console.log("selectedServices:", selectedServices);
+console.log("email:", email);
+
     fetch('/.netlify/functions/create-checkout', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

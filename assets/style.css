@@ -50,3 +50,8 @@ button {
 a {
   color: #0070f3;
 }
+.input-group {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}

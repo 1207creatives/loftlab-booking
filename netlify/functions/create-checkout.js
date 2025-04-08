@@ -9,7 +9,13 @@ exports.handler = async (event) => {
       };
     }
 
-    const { services: items, email } = JSON.parse(event.body);
+    const body = JSON.parse(event.body);
+console.log("FULL BODY:", event.body);
+console.log("Parsed services:", body.services);
+console.log("Parsed email:", body.email);
+
+const { services, email } = body;
+
 
     if (!items || items.length === 0) {
       console.error('No items received:', items);

@@ -1,3 +1,4 @@
+// Force redeploy with updated URLs
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 exports.handler = async (event) => {
@@ -84,8 +85,8 @@ exports.handler = async (event) => {
       line_items,
       mode: 'payment',
       customer_email: email,
-      success_url: 'https://melodious-granita-c39e18.netlify.app/success',
-      cancel_url: 'https://melodious-granita-c39e18.netlify.app',
+      success_url: 'https://loftlab.netlify.app/successful',
+      cancel_url: 'https://loftlab.netlify.app',
       metadata: {
         email,
         services: items.join(', '),

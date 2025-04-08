@@ -89,7 +89,9 @@ console.log("email:", email);
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         services: selectedServices, // ✅ now matches the backend
-        email: email
+        email: email,
+        date: date,
+    time: time
       })
     })
     .then(res => res.json())

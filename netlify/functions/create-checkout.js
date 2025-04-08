@@ -10,12 +10,14 @@ exports.handler = async (event) => {
     }
 
     const body = JSON.parse(event.body);
-console.log("FULL BODY:", event.body);
-console.log("Parsed services:", body.services);
-console.log("Parsed email:", body.email);
+    console.log("FULL BODY:", event.body);
+    console.log("Parsed services:", body.services);
+    console.log("Parsed email:", body.email);
+    console.log("Parsed date:", body.date);
+    console.log("Parsed time:", body.time);
 
-const { services, email } = body;
-const items = services;
+    const { services, email, date, time } = body;
+    const items = services;
 
 
 
@@ -83,6 +85,12 @@ const items = services;
       customer_email: email,
       success_url: 'https://melodious-granita-c39e18.netlify.app/success',
       cancel_url: 'https://melodious-granita-c39e18.netlify.app',
+      metadata: {
+        email,
+        services: items.join(', '),
+        booking_date: date,
+        booking_time: time
+      }
     });
 
     return {

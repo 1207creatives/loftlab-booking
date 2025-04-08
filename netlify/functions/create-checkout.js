@@ -62,7 +62,6 @@ exports.handler = async (event) => {
       "BTS Photography (15-20 stills)": "price_1RBMDeI6eHZ8P8aqMkXV4oTW",
       "60 Minute Strategy Call": "price_1RBMDxI6eHZ8P8aqw3EfmRzR",
       "Thumbnail": "price_1RBMERI6eHZ8P8aqwBx9zYEt",
-      "Test Booking ($1)": "price_1RBV2MI6eHZ8P8aqr8GePxeW",
     };
 
     const line_items = items

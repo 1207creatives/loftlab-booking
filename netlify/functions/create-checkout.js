@@ -15,6 +15,8 @@ console.log("Parsed services:", body.services);
 console.log("Parsed email:", body.email);
 
 const { services, email } = body;
+const items = services;
+
 
 
     if (!items || items.length === 0) {
